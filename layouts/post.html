@@ -1,0 +1,17 @@
+<% render 'default' do %>
+  <div class='post'>
+      <h1><%= link_to item[:title], item.path %></h1>
+      <aside><%= get_pretty_date(item) %></aside>
+      <article>
+          <%= yield %>
+          </article>
+
+          <% if sorted_articles.at(sorted_articles.index(item)+1) %>
+          <div style='margin: 0px auto;'><p style='text-align: center; font-weight: bold'>← Previous Post: <%= link_to sorted_articles.at(sorted_articles.index(item)+1)[:title], sorted_articles.at(sorted_articles.index(item)+1).path %></p></div>
+          <% end %>
+
+          <% if sorted_articles.index(item) != 0 %>
+          <div style='margin: 0px auto'><p style='text-align: center; font-weight: bold'>Next Post: <%= link_to sorted_articles.at(sorted_articles.index(item)-1)[:title], sorted_articles.at(sorted_articles.index(item)-1).path %> →</p></div>
+          <% end %>
+  </div>
+<% end %>

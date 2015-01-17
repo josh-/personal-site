@@ -1,0 +1,27 @@
+<% render 'default' do %>
+    <div class='project'>
+        <a class="nounderline" href=<%= item.path %>>
+                <img src=<%= icon(item) %> class="center">
+        <h1 style="width:100%; text-align:center"><%= link_to item[:title], item.path %></h1>
+        </a>
+        <% if item[:download] then %>
+            <br>
+            <div style="width:200px; height:50px; background-color:#EEE; text-align:center"><p style="margin:auto; line-height:50px"><%= link_to "Download", item[:download] %></p></div>
+        <% end %>
+        <% if item[:github] then %>
+            <br>
+            <div style="width:200px; height:50px; background-color:#99CC66; text-align:center"><p style="margin:auto; line-height:50px"><%= link_to "View on GitHub", item[:github] %></p></div>
+        <% end %>
+        <% if item[:appstore] then %>
+        <a href=<%= item[:appstore]%>>
+            <br>
+            <img class="center" src="/images/appstore.svg" />
+        </a>
+        <% end %>
+        <br>
+        <article>
+        <%= yield %>
+        </article>
+        <br>
+    </div>
+<% end %>

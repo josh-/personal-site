@@ -1,0 +1,10 @@
+ErrorDocument 404 /404/
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteCond %{HTTP_HOST} ^www\.joshparnham.com [NC]
+RewriteRule ^(.*) http://joshparnham.com/$1 [L,R=301]
+
+<FilesMatch "\.(crx|safariextz|oex)$">
+  Header set Content-Disposition attachment
+</FilesMatch>

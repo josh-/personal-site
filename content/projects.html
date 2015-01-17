@@ -1,0 +1,16 @@
+--- 
+title: Projects
+---
+
+<div style="width: 100%;">  
+    <% sorted_projects.each do |project| %>
+        <div class='project'>
+            <a class="nounderline" href=<%= project.path %>>
+                <div style="padding: 5px;width:100%;height:200px;">
+                    <img src=<%= icon(project) %> width="150px" style="float:left;vertical-align:middle">
+                    <span style="margin-left: 20px"><%= project[:slogan] || "" %></span>
+                </div>
+            </a>
+        </div>
+    <% end %>
+</div>
