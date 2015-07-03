@@ -76,27 +76,6 @@ li#nav a {
     font-weight: 80;
 	color: #FFF;
 }
-#fusion_ad {
-    float: right;
-    margin-right: 22%;
-    width: 320px;
-    padding-top: 10px;
-    max-width: 400px;
-}
-a.fusiontext {
-    color: #FFF;
-    text-decoration: none;
-    margin-top: 15px;
-    display: inline;
-}
-img.fusionimg {
-    width: 130px;
-    height: 100px;
-    float:left;
-    margin-top: 0px;
-    margin-right: 15px;
-    vertical-align: middle;
-}
 
 /* Footer */
 
@@ -154,13 +133,13 @@ div#footer p {
 	width: 32.2%;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: /*480px*/660px) {
 	.col { 
 		margin: 1% 0 1% 0%;
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: /*480px*/660px) {
 	.span_3_of_3 {
 		width: 100%; 
 	}
@@ -406,17 +385,9 @@ h1.fourohfour {
         margin-right: auto;
         margin-top: 0px;
         float: none;
-
-    }
-    #fusion_ad {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        float: none;
-        width: 300px;
     }
     .header {
-        height: 250px;
+        height: 130px;
     }
 }
 @media (max-width: 1024px) {
@@ -432,16 +403,8 @@ h1.fourohfour {
         margin-right: auto;
         margin-top: 0px;
         float: none;
-
-    }
-    #fusion_ad {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        float: none;
-        width: 300px;
     }
     .header {
-        height: 230px;
+        height: 130px;
     }
 }
