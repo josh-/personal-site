@@ -15,6 +15,10 @@
 
 require 'uri'
 
+compile '/stylesheet/' do
+  # don’t filter or layout
+end
+
 compile '/posts/*' do
   filter :kramdown,
     :enable_coderay => true,
