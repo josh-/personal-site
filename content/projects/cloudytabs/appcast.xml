@@ -37,5 +37,21 @@
             <pubDate>Sat, 31 May 2014 12:00:00 +0000</pubDate>
             <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.4/CloudyTabs.zip" sparkle:version="1.4" length="1217115" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCz7bLY9Z+61fus/mKrXfAyPmZKlQIVAJRUILMdzihyZMWulzCMgZvsCtWb" />
          </item>
+         <item>
+            <title>Version 1.5 (2 bugs fixed; 1 new features)</title>
+						<sparkle:releaseNotesLink>
+							http://joshparnham.com/projects/cloudytabs/v1.5.html
+						</sparkle:releaseNotesLink>
+            <pubDate>Thu, 08 Jan 2015 12:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.5/CloudyTabs.zip" sparkle:version="1.5" length="1223071" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCXXcmRGhJ1z4JfhpArsxm4geRRkAIVAJ3FDznVOz1wjyP/4+Py4uBolSt7" />
+        </item>
+        <item>
+            <title>Version 1.6 (0 bugs fixed; 1 new features)</title>
+						<sparkle:releaseNotesLink>
+							http://joshparnham.com/projects/cloudytabs/v1.6.html
+						</sparkle:releaseNotesLink>
+            <pubDate>Sun, 05 Apr 2015 12:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.6/CloudyTabs.zip" sparkle:version="1.6" length="1222811" type="application/octet-stream" sparkle:dsaSignature="MC0CFQCuRzHanNrjNMzOQc0y5bT5XDF0WQIUVrRJ9OegLFZMqUby6SMaj7WpwS8=" />
+         </item>
    </channel>
 </rss>
