@@ -355,6 +355,13 @@ ol.CodeRay li { white-space: pre }
     margin: 10px 0 30px 0;
 }
 
+/* Project */
+
+.projectbutton {
+    float: left;
+}
+
+
 /* 404 */
 
 .fourohfour {
@@ -372,7 +379,7 @@ h1.fourohfour {
 
 /* Smartphones & Tablets */
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 480px) {
     .post article ol, ul {
         list-style-position: inside;
     }
@@ -389,8 +396,13 @@ h1.fourohfour {
     .header {
         height: 130px;
     }
+    .projectbutton {
+        float: none;
+    }
 }
-@media (max-width: 1024px) {
+
+
+@media only screen and (min-width: 768px) {
     .post article ol, ul {
         list-style-position: inside;
     }
@@ -406,5 +418,14 @@ h1.fourohfour {
     }
     .header {
         height: 130px;
+    }
+    .projectbutton {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .projectbutton {
+        float: left;
     }
 }
