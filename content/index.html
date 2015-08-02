@@ -17,7 +17,7 @@ title: Home
 <h3 class="intro">My latest <a class="nounderline" href="/blog/">blog posts</a></h3>
 
 <% published_articles.first(5).each do |post| %>
-    <div class='post'>
+    <div class="post">
         <h1><%= link_to post[:title], post.path %></h1>
         <aside><%= get_pretty_date(post) %></aside>
     </div>
