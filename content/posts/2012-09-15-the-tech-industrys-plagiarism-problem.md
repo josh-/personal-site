@@ -10,18 +10,16 @@ With recent product releases from Samsung and HP showing striking similarities t
 <!-- more -->
 
 <style>
-table
-{
-border-collapse:collapse;
-table-layout: fixed;
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
 }
-table, td, th
-{
-border:1px solid black;
-padding: 5px;
+table, td, th {
+    border: 1px solid black;
+    padding: 5px;
 }
 td {
-width:50%
+    widows: 50%;
 }
 
 img {
@@ -32,16 +30,16 @@ img {
 
 | Released First | Released Second |
 | :-----------: | :-----------: |
-| ![Apple iMac](/images/Apple_iMac.jpg) <br> [Apple iMac](http://en.wikipedia.org/wiki/IMac_(Intel-based)#Aluminum_iMac), released August 2007 | ![HP Spectre One](/images/HP_Spectre_One.jpg) <br> [HP Spectre One](http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/), released October 2012 |
-|  ![Apple MacBook Pro](/images/Apple_MacBook_Pro.jpg) <br> [Apple MacBook Pro](http://en.wikipedia.org/wiki/MacBook#Aluminium_unibody_model), released October 2008 | ![HP Envy](/images/HP_Envy.jpg) <br> [Hp Envy](http://www.engadget.com/2012/01/28/hp-envy-15-review-early-2012/), released December 2011 |
-| ![Apple iPhone 3G](/images/Apple_iPhone_3G.jpg) <br> [Apple iPhone 3G](http://en.wikipedia.org/wiki/IPhone_3G), released July 2008 | ![Samsung Galaxy S i900](/images/Samsung_Galaxy_S.jpg) <br> [Samsung Galazy S i900](http://en.wikipedia.org/wiki/Samsung_Galaxy_S), released March 2010 |
-| ![Apple iPod Touch (3rd Generation)](/images/Apple_iPod_Touch.jpg) <br> [Apple iPod Touch (3rd Generation)](http://en.wikipedia.org/wiki/IPod_Touch), released September 2009 | ![Samsung Galaxy Player](/images/Samsung_Galaxy_Player.jpg) <br> [Samsung Galaxy Player](http://en.wikipedia.org/wiki/Samsung_Galaxy_Player), released October 2011 |
+| ![Apple iMac](/images/Apple_iMac.jpg) <br /> [Apple iMac](http://en.wikipedia.org/wiki/IMac_(Intel-based)#Aluminum_iMac), released August 2007 | ![HP Spectre One](/images/HP_Spectre_One.jpg) <br /> [HP Spectre One](http://www.engadget.com/2012/09/10/hp-spectre-one-all-in-one-envy-20-envy-23-pavilion-20/), released October 2012 |
+|  ![Apple MacBook Pro](/images/Apple_MacBook_Pro.jpg) <br /> [Apple MacBook Pro](http://en.wikipedia.org/wiki/MacBook#Aluminium_unibody_model), released October 2008 | ![HP Envy](/images/HP_Envy.jpg) <br /> [Hp Envy](http://www.engadget.com/2012/01/28/hp-envy-15-review-early-2012/), released December 2011 |
+| ![Apple iPhone 3G](/images/Apple_iPhone_3G.jpg) <br /> [Apple iPhone 3G](http://en.wikipedia.org/wiki/IPhone_3G), released July 2008 | ![Samsung Galaxy S i900](/images/Samsung_Galaxy_S.jpg) <br /> [Samsung Galazy S i900](http://en.wikipedia.org/wiki/Samsung_Galaxy_S), released March 2010 |
+| ![Apple iPod Touch (3rd Generation)](/images/Apple_iPod_Touch.jpg) <br /> [Apple iPod Touch (3rd Generation)](http://en.wikipedia.org/wiki/IPod_Touch), released September 2009 | ![Samsung Galaxy Player](/images/Samsung_Galaxy_Player.jpg) <br /> [Samsung Galaxy Player](http://en.wikipedia.org/wiki/Samsung_Galaxy_Player), released October 2011 |
 
  The table is certainly conclusive as to the surprising level of which later-released devices have drawn inspiration from their earlier counterparts. Granted, this table only shows a minuscule slice of the current current market - but highlights a much larger problem that has become increasingly evident in certain manufacturers. Thinking further about this concept prompted a relevant anecdotal situation that occurs every single day in educational institutions. These companies have a problem with *schoolyard plagiarism*. Now you may think this is quite strange accusation to aim, but something I feel is most definitely warranted. For example, a typical experience from my schooling (as well as [many others](https://www.facebook.com/pages/Wikipedia-Copy-Paste-Homework-done/336027351115)):
 
  1. **Receive assignment.**
  2. **Copy & Paste from Wikipedia.**
- 3. **Change a few words. Hand in.**<br>
+ 3. **Change a few words. Hand in.**<br />
  
  This situation can be easily re-interpreted to fit within the realms of today's technology market:
 

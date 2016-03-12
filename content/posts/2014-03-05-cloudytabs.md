@@ -11,7 +11,7 @@ Using Chrome on OS X and Safari on my iOS devices means that I'm not able make u
 
 [CloudyTabs](/projects/cloudytabs/) is my simple menu bar application that the iCloud Tabs on all the devices in your iCloud account.
 
-<img class="responsive center" style="width: 600px;" src="/projects/cloudytabs/CloudyTabs.png">
+<img class="responsive center" style="width: 600px;" src="/projects/cloudytabs/CloudyTabs.png" />
 
 To use CloudyTabs, open the app and select a tab from one of your devices. The tab's URL then opens it in your default browser, Cmd-Selecting a tab (or highlighting it and pressing Cmd-Return) opens the tab in the background. Opt-Selecting a tab (or highlighting it and pressing Opt-Return) will copy the tab's URL to your pasteboard.
 

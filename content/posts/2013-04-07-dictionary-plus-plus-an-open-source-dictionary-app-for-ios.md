@@ -11,7 +11,7 @@ On OS X, this is simply a case of [typing the word into Spotlight](http://www.cu
 
 <!-- more -->
 
-* **Using Siri to "Define [word]"** (which actually uses [WolframAlpha](http://wolframalpha.com) to find definitions for words). However, this solution not only requires a fast network connection, but also forces you to speak the word aloud (not feasible in a classroom situation, for example) whilst also relying on Apple's speech synthesising (which tends to perform relatively poorly with my Australian accent).
+* **Using Siri to "Define \[word\]"** (which actually uses [WolframAlpha](http://wolframalpha.com) to find definitions for words). However, this solution not only requires a fast network connection, but also forces you to speak the word aloud (not feasible in a classroom situation, for example) whilst also relying on Apple's speech synthesising (which tends to perform relatively poorly with my Australian accent).
 * **Awkwardly accessing the system dictionary** by typing words I needed to define into Notes.app, selecting each one and tapping "Define" in the resulting MenuController.
 * **Using a third-party dictionary application from the App Store**, however, as iOS already includes a full dictionary it seems ridiculously wasteful to download *another* dictionary.
 

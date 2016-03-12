@@ -12,15 +12,15 @@ iOS 6 brings with it significant changes to the process of discovering, buying a
 ## Handling Mac App Store Links
 I should start counting the number of times I open an inconspicuous [http://itunes.apple.com/](http://itunes.apple.com) link thinking that it's an link to an iOS app, only to later find it's actually a Mac application. I must do it almost once a day, and whenever it happens the OS decides that the best thing to do is open the App Store and show you this:
 
-<img class="responsive center" style="max-height: 600px" src="/images/Mac_App.png" alt="Mac Application in the iOS App Store">
+<img class="responsive center" style="max-height: 600px" src="/images/Mac_App.png" alt="Mac Application in the iOS App Store" />
 
 For a novice user - one who may not even understand the difference between iOS and OS X, this vague and potentially nonsensical information and doesn't really help explain the situation at all. This flaw is quite critical, since at this point both Apple and the app developer lose a potential customer if the user can't understand the information or forgets to download said app next time they're on their Mac.
 
 [I wondered how this could be improved](https://twitter.com/joshparnham/status/243113383224807424), and my thoughts turned to Amazon's "Send to Kindle" feature. If you've never used this before, the basic idea is that when buying a Kindle book on the Amazon website, you are prompted to "send" the book to one of the Kindles connected to your account. I thought the premise behind this feature could translate fantastically to iOS - where [Apple's "Automatic Download" infrastructure](http://www.macrumors.com/2011/06/06/apple-rolls-out-first-icloud-features-automatic-downloads-purchased-content-listings/) could be used to "send" any Mac App Store app to one of your Macs from your iOS devices. Here's a mock-up I created:
 
-<img class="responsive center" style="max-height: 600px" src="/images/Mac_App_Mockup.jpg" alt="Mock-up of a Mac App Store app on iOS">
+<img class="responsive center" style="max-height: 600px" src="/images/Mac_App_Mockup.jpg" alt="Mock-up of a Mac App Store app on iOS" />
 
-<img class="responsive center" style="max-height: 600px" src="/images/Mac_App_Mockup_2.jpg" alt="Mock-up of sending a Mac App Store to a Mac">
+<img class="responsive center" style="max-height: 600px" src="/images/Mac_App_Mockup_2.jpg" alt="Mock-up of sending a Mac App Store to a Mac" />
 
 (note that I am not at all associated with 1Password - it's just an awesome app that is available on both platforms)
 
@@ -29,7 +29,7 @@ In my mock-up, after tapping "$10.49", the button expands to read "Send to Mac..
 ## WebViews, WebViews Everywhere
 We've all seen pages like this:
 
-<img class="responsive center" style="max-height: 600px" src="/images/App_Store_No_CSS.jpg" alt="App Store without CSS">
+<img class="responsive center" style="max-height: 600px" src="/images/App_Store_No_CSS.jpg" alt="App Store without CSS" />
 ( Credit to <a href="https://twitter.com/meyerweb/status/236627613811101696/photo/1">meyerweb</a>)
 
 

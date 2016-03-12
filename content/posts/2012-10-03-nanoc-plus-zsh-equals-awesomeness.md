@@ -36,7 +36,7 @@ git remote add josh git://github.com/josh-/oh-my-zsh.git
 git fetch josh
 git merge josh/master
 ~~~
-{:.language-sh}
+{:.language-text}
 
 These commands will download the changes in my fork and merge them into your custom Oh-My-Zsh directory, keeping all changes you've made intact. Then just add nanoc to your `.zshrc` plugins.
 
@@ -50,4 +50,4 @@ I hope to continue improving this plugin - if you have any suggestions, comments
 cd ~/.oh-my-zsh
 git pull origin master
 ~~~
-{:.language-sh}
+{:.language-text}
