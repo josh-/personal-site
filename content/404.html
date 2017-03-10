@@ -3,7 +3,7 @@ title: 404
 ---
 
 <p class="fourohfour">404</p>
-<h1 class="fourohfour"">I couldn't find the page you requested, but i found this cute cat instead:</h1>
+<h1 class="fourohfour">I couldn't find the page you requested, but I found this cute cat instead:</h1>
 <br>
 <a href="" target="_blank" class="flickrURL"><img id="cat" class="center responsive"></a>
 <p align="center"><a href="" target="_blank" class="flickrURL"><i id="user" class="fa fa-flickr"></i></a></p>
@@ -11,12 +11,12 @@ title: 404
 <p align="center" style="color:#ccc">(You might want to try reloading too)</p>
 <script>
 window.onload = function getCat() {
-        cats = [
+    cats = [
         {imageURL:"https://farm5.staticflickr.com/4096/4829982031_935f5e14b0_b.jpg", flickrURL:"https://www.flickr.com/photos/mistyanddavid/4829982031", user:"Random_fotos"},
         {imageURL:"https://farm4.staticflickr.com/3546/3876407782_a6b95265f0_b.jpg", flickrURL:"https://www.flickr.com/photos/lokidude_pics/3876407782", user:"Mark Round"},
         {imageURL:"https://farm2.staticflickr.com/1143/811012197_d4eca00d6b_z.jpg?zz=1", flickrURL:"https://www.flickr.com/photos/hippydelia/811012197", user:"Pati"},
         {imageURL:"https://farm1.staticflickr.com/15/22252709_010df3379e_z.jpg?zz=1", flickrURL:"https://www.flickr.com/photos/kpjas/22252709", user:"Kpjas"}
-        ];
+    ];
 
     var cat = cats[Math.floor(Math.random()*cats.length)];
 
@@ -31,6 +31,5 @@ window.onload = function getCat() {
     for (var i = 0; i < links.length; i++) {
         links[i].href = cat.flickrURL;
     }
-
 }
 </script>
