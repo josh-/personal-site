@@ -6,7 +6,6 @@
         <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
         <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" type="text/css" href="/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22626343-1']);
@@ -20,7 +19,7 @@
         </script>
     </head>
     <body>
-        <div class="header">
+        <header>
             <div id="headercontent">
                 <a class="nounderline" href="/"><h1>Josh Parnham</h1></a>
                 <ul class="nav">
@@ -29,12 +28,13 @@
                     <li id="nav"><a href="/about/">About</a></li>
                 </ul>
             </div>
-        </div>
+        </header>
 
         <section class='content'>
             <%= yield %>
             <% render 'footer' do %>
             <% end %>
         </section>
+        <script src="https://use.fontawesome.com/e33a98c0d1.js"></script>
     </body>
 </html>
