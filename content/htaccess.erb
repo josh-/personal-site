@@ -2,8 +2,14 @@ ErrorDocument 404 /404/
 
 RewriteEngine on
 Options +FollowSymlinks
-RewriteCond %{HTTP_HOST} ^www\.joshparnham.com [NC]
-RewriteRule ^(.*) http://joshparnham.com/$1 [L,R=301]
+
+
+RewriteRule ^ - [E=protossl]
+RewriteCond %{HTTPS} on
+RewriteRule ^ - [E=protossl:s]
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
 
 <FilesMatch "\.(crx|safariextz|oex)$">
   Header set Content-Disposition attachment
