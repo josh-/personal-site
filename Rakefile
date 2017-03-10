@@ -6,7 +6,7 @@ desc "Create a new post"
 task :new_post do
     mkdir_p './content/posts'
     print "Enter title: "
-    title = gets.chomp
+    title = STDIN.gets.chomp
 
     filename = "./content/posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
     if File.exist?(filename)
@@ -14,7 +14,7 @@ task :new_post do
     end
 
     print "Enter Published Status (true or false): "
-    published = gets.chomp
+    published = STDIN.gets.chomp
 
     puts "Creating new post: #{filename}"
     open(filename, 'w') do |post|
