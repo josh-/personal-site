@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+   <channel>
+      <title>TodayFlights Changelog</title>
+      <link>https://joshparnham.com/projects/todayflights/appcast.xml</link>
+      <description>Most recent changes with links to updates.</description>
+      <language>en</language>
+         <item>
+            <title>Version 1.1 (2 bugs fixed; 0 new features)</title>
+                        <sparkle:releaseNotesLink>
+                            https://joshparnham.com/projects/todayflights/v1.1.html
+                        </sparkle:releaseNotesLink>
+            <pubDate>Sat, 10 Feb 2017 15:50:00 +0000</pubDate>
+            <enclosure url="https://github.com/josh-/TodayFlights/releases/download/v1.1/TodayFlights.zip" sparkle:version="1.1" length="1180520" type="application/octet-stream" sparkle:dsaSignature="MC0CFQDO0gkuCwP5pO/ez0ad+D4p+KhkfgIUfpbAr/d8Os52+XfTAraQGqxB+FE=" />
+         </item>
+   </channel>
+</rss>
