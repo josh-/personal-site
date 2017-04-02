@@ -1,5 +1,6 @@
 --- 
 title: About
+description: Aspiring full-stack software developer from Melbourne, Australia.
 ---
 
 Hi. I'm Josh Parnham - a student hailing from [*Melbourne, Australia*](http://osm.org/go/uG4NAb). I spend my days developing software and studying.
