@@ -1,5 +1,4 @@
 module ProjectHelper
-
   def projects
     @items.select { |item| item[:kind] == 'project' }
   end
@@ -9,11 +8,11 @@ module ProjectHelper
   end
 
   def icon(item)
-      item.path.to_s + '/Icon.png' || ""
+    File.join(item.path, 'Icon.png')
   end
-  
+
   def project_text(project)
-      project.compiled_content || "NO CONTENT"
+    project.compiled_content || 'Content coming soon'
   end
 end
 
