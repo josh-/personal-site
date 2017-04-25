@@ -1,0 +1,33 @@
+image: "ruby:2.4"
+
+before_script:
+  - ruby -v
+  - which ruby
+  - gem install bundler --no-ri --no-rdoc
+  - bundle install -j4 --path vendor
+
+cache:
+  paths:
+    - vendor
+
+stages:
+#  - test
+  - deploy
+
+#lint:
+#  stage: test
+#  script:
+#    - bundle exec rake lint
+#  tags:
+#    - ruby
+
+pages:
+  stage: deploy
+  script:
+    - apt-get update -yqqq
+    - bundle exec nanoc
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
