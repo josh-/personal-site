@@ -24,7 +24,7 @@ img.center {
 hr {
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 1px;
+    height: 0.5px;
     color: #ccc;
     background: #ccc;
     font-size: 0;
@@ -44,6 +44,20 @@ video {
 
 div.read-more {
     float: right;
+}
+
+small {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #777;
+    font-size: 16px;
+}
+
+/* Font Awesome */
+
+i.fa {
+    margin-right: 5px;
 }
 
 /* Header */
@@ -99,9 +113,18 @@ footer {
     margin-bottom: 10px;
 }
 
+footer hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 footer a {
-    margin-left: 10px;
-    margin-right: 10px;
+    color: #888;
+    font-size: 35px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* Grid from http://www.responsivegridsystem.com */
