@@ -1,8 +1,9 @@
 image: "ruby:2.4"
 
 before_script:
-  - export LANG=en_US.UTF-8
-  - export LANGUAGE=en_US.UTF-8
+  - apt-get update && apt-get install -y locales
+  - echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+  - locale-gen
   - export LC_ALL=en_US.UTF-8
   - ruby -v
   - which ruby
@@ -27,7 +28,6 @@ stages:
 pages:
   stage: deploy
   script:
-    - apt-get update -yqqq
     - bundle exec nanoc
   artifacts:
     paths:
