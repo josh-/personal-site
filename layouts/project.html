@@ -1,4 +1,4 @@
-<% render "default" do %>
+<% render 'default' do %>
     <div class="project" style="text-align: center;">
         <a class="nounderline" href="<%= item.path %>"><img src="<%= icon(item) %>" class="center"></a>
         <h1 style="width:100%; text-align:center"><%= link_to item[:title], item.path %></h1>
@@ -14,11 +14,22 @@
                     <img class="center" src="/images/appstore.svg" />
                 </a>
             <% end %>
-            <div style="clear:both;"></div>
+            <div style="clear: both;"></div>
         </div>
         <article style="text-align: left;">
         <%= yield %>
         </article>
         <br>
     </div>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "<%= item[:title] %>",
+  "applicationCategory": "http://schema.org/UtilitiesApplication"
+  <% if item[:download] then %>
+  ,"downloadURL": "<%= item[:download] %>"
+  <% end %>
+}
+</script>
 <% end %>

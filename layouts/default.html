@@ -20,22 +20,25 @@
         </script>
     </head>
     <body>
-        <header>
-            <a class="nounderline" href="/"><h1>Josh Parnham</h1></a>
-            <nav>
-                <ul class="nav">
-                    <li id="nav"><a href="/blog/">Blog</a></li>
-                    <li id="nav"><a href="/projects/">Projects</a></li>
-                    <li id="nav"><a href="/about/">About</a></li>
-                </ul>
-            </nav>
+        <header role="banner" itemscope itemtype="http://schema.org/WPHeader">
+            <hgroup>
+                <a class="nounderline" href="/"><h1 itemprop="name">Josh Parnham</h1></a>
+                <nav role="navigation" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                    <ul>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/projects/">Projects</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </nav>
+            </hgroup>
         </header>
 
-        <section class='content'>
-            <%= yield %>
-            <% render 'footer' do %>
-            <% end %>
-        </section>
+        <main role="main" itemscope itemprop="mainContentOfPage">
+            <section class="content">
+                <%= yield %>
+                <% render 'footer' do %><% end %>
+            </section>
+        </main>
         <script src="https://use.fontawesome.com/e33a98c0d1.js"></script>
     </body>
 </html>

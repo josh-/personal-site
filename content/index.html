@@ -18,8 +18,23 @@ description: Aspiring full-stack software developer from Melbourne, Australia.
 <h3 class="intro">My latest <a class="nounderline" href="/blog/">blog posts</a></h3>
 
 <% published_articles.first(5).each do |post| %>
-    <div class="post">
-        <h1><%= link_to post[:title], post.path %></h1>
-        <aside><%= get_pretty_date(post) %></aside>
-    </div>
+    <article itemscope itemtype="http://schema.org/Article">
+        <h1 itemprop="name headline"><%= link_to post[:title], post.path %></h1>
+        <aside><time class="post-time" itemprop="datePublished" datetime=<%= iso_8601_date(post) %>><%= formatted_date(post) %></time></aside>
+    </article>
 <% end %>
+
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "Person",
+    "name" : "Josh Parnham",
+    "url" : "http://joshparnham.com",
+    "sameAs" : [
+        "https://linkedin.com/in/joshparnham/",
+        "https://facebook.com/josh.parnham/",
+        "https://twitter.com/joshparnham/",
+        "https://instagram.com/joshparnham/"
+    ]
+}
+</script>

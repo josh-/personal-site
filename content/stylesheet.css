@@ -693,12 +693,16 @@ ol.CodeRay li {
 
 /* Blog Posts */
 
-.post aside {
+article h1 {
+    font-size: 1.5em;
+}
+
+article aside time {
     color: #888;
     padding-bottom: 8px;
 }
 
-.post article {
+article .post {
     margin: 10px 0 30px 0;
 }
 
@@ -750,7 +754,7 @@ h1.fourohfour {
 /* Smartphones & Tablets */
 
 @media only screen and (min-width: 480px) {
-    .post article ol,
+    article .post ol,
     ul {
         list-style-position: inside;
     }
@@ -767,7 +771,7 @@ h1.fourohfour {
 }
 
 @media only screen and (min-width: 768px) {
-    .post article ol,
+    article .post ol,
     ul {
         list-style-position: inside;
     }
