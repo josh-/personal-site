@@ -31,6 +31,6 @@ pages:
     - bundle exec nanoc
   artifacts:
     paths:
-      - public
+      - output
   only:
     - master
