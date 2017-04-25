@@ -686,6 +686,27 @@ ol.CodeRay li {
     float: left;
 }
 
+/* About */
+
+h1.about {
+    color: #888;
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+dt, dd {
+    margin-bottom: 20px;
+}
+
+dt {
+    float: left;
+    width: 100px;
+}
+
+dd {
+    margin-left: 10px;
+}
 
 /* 404 */
 
