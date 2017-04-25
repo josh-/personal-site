@@ -735,12 +735,6 @@ h1.fourohfour {
         margin-left: 5%;
         margin-right: 5%;
     }
-    #headercontent {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        float: none;
-    }
     header {
         height: 100px;
     }
@@ -757,12 +751,6 @@ h1.fourohfour {
     .content {
         margin-left: 15%;
         margin-right: 15%;
-    }
-    #headercontent {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        float: none;
     }
     header {
         height: 100px;
