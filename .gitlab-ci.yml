@@ -1,7 +1,9 @@
 image: "ruby:2.4"
 
 before_script:
-  - export LC_ALL="en_US.UTF-8"
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US.UTF-8
+  - export LC_ALL=en_US.UTF-8
   - ruby -v
   - which ruby
   - gem install bundler --no-ri --no-rdoc
