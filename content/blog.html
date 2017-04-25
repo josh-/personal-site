@@ -6,9 +6,9 @@ description: Blog posts that I've written.
 <% published_articles.each do |post| %>
   <div class='post'>
     <h1><%= link_to post[:title], post.path %></h1>
-    <aside><%= get_pretty_date(post) %></aside>
+    <aside><%= formatted_date(post) %></aside>
     <article>
-       <%= get_post_start(post) %>
+       <%= post_introduction(post) %>
     </article>
   </div>
 <% end %>

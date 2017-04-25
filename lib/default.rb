@@ -1,4 +1,4 @@
-# All files in the 'lib' directory will be loaded before nanoc starts compiling
+require 'time'
 
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Tagging
@@ -6,12 +6,16 @@ include Nanoc::Helpers::Rendering
 include Nanoc::Helpers::LinkTo
 
 module PostHelper
-  def get_pretty_date(post)
+  def formatted_date(post)
     attribute_to_time(post[:created_at]).strftime('%B %-d, %Y')
+  end
+
+  def iso_8601_date(post)
+    attribute_to_time(post[:created_at]).dup.utc.iso8601.to_s
   end
 end
 
-def get_post_start(post)
+def post_introduction(post)
   content = post.compiled_content
   if content =~ /\s<!-- more -->\s/
     read_more_text = 'Keep reading →'
