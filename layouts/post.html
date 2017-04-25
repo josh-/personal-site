@@ -1,5 +1,17 @@
 <% render 'default' do %>
     <article itemscope itemtype="http://schema.org/BlogPosting">
+        <div style="display: none;" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+            <a itemprop="url" href="//">
+                <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                   <img src="//apple-touch-icon.png" alt="Josh Parnham">
+                   <meta itemprop="url" content="https://joshparnham.com/apple-touch-icon.png">
+                   <meta itemprop="width" content="180">
+                   <meta itemprop="height" content="180">
+                </span>   
+                <span itemprop="name">Josh Parnham</span>
+                <span itemprop="description">Personal blog</span>
+            </a>
+        </div>
         <h1 itemprop="name headline"><%= link_to item[:title], item.path %></h1>
         <aside><time class="post-time" itemprop="datePublished" datetime=<%= iso_8601_date(item) %>><%= formatted_date(item) %></time>, by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="/" itemprop="url"><span itemprop="name">Josh Parnham</span></a></span></aside>
         <img style="display: none;" src="/apple-touch-icon.png" itemprop="image">
