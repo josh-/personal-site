@@ -1,7 +1,8 @@
 <% render 'default' do %>
-    <article itemscope itemtype="http://schema.org/Article">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
         <h1 itemprop="name headline"><%= link_to item[:title], item.path %></h1>
-        <aside><time class="post-time" itemprop="datePublished" datetime=<%= iso_8601_date(item) %>><%= formatted_date(item) %></time></aside>
+        <aside><time class="post-time" itemprop="datePublished" datetime=<%= iso_8601_date(item) %>><%= formatted_date(item) %></time>, by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><a href="/" itemprop="url"><span itemprop="name">Josh Parnham</span></a></span></aside>
+        <img style="display: none;" src="/apple-touch-icon.png" itemprop="image">
         <div class="post" itemprop="articleBody">
             <%= yield %>
         </div>

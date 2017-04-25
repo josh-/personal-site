@@ -18,7 +18,7 @@ description: Aspiring full-stack software developer from Melbourne, Australia.
 <h3 class="intro">My latest <a class="nounderline" href="/blog/">blog posts</a></h3>
 
 <% published_articles.first(5).each do |post| %>
-    <article itemscope itemtype="http://schema.org/Article">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
         <h1 itemprop="name headline"><%= link_to post[:title], post.path %></h1>
         <aside><time class="post-time" itemprop="datePublished" datetime=<%= iso_8601_date(post) %>><%= formatted_date(post) %></time></aside>
     </article>
