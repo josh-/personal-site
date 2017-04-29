@@ -21,9 +21,7 @@ compile '/stylesheet/' do
 end
 
 compile '/posts/*' do
-  filter :kramdown,
-    :enable_coderay => true,
-    :coderay_line_numbers => nil
+  filter :kramdown, enable_coderay: true, coderay_line_numbers: nil
   layout 'post'
   filter :html5small
 end
@@ -49,7 +47,7 @@ compile '/projects' do
 end
 
 compile '/projects/*' do
-  if item[:extension] == "md"
+  if item[:extension] == 'md'
     filter :kramdown
     layout 'project'
     filter :html5small
@@ -59,10 +57,10 @@ end
 passthrough '/downloads/*/'
 
 route '/projects/*/' do
-  if item.identifier.to_s.split("/").last == item.identifier.to_s.split("/")[-2] then
-    item.identifier.to_s.split("/").reverse.drop(1).reverse.join("/") + "/index.html"
+  if item.identifier.to_s.split('/').last == item.identifier.to_s.split('/')[-2]
+    item.identifier.to_s.split('/').reverse.drop(1).reverse.join('/') + '/index.html'
   else
-    item.identifier.to_s[0..-2] + "." + item[:extension]
+    item.identifier.to_s[0..-2] + '.' + item[:extension]
   end
 end
 
@@ -79,7 +77,7 @@ route '/stylesheet' do
 end
 
 route '/posts/*' do
-  y, m, d, slug = /([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)/.match(item.identifier).captures
+  y, m, _d, slug = /([0-9]+)\-([0-9]+)\-([0-9]+)\-([^\/]+)/.match(item.identifier).captures
   "/#{y}/#{m}/#{slug}/index.html"
 end
 
