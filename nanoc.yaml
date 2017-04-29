@@ -61,6 +61,11 @@ data_sources:
     # it will become “/about.html/” instead.
     allow_periods_in_identifiers: true
 
+    identifier_type: legacy
+
+string_pattern_type: legacy
+
+
 # The Base URL of the site - necessary for the RSS feed
 base_url: 'http://joshparnham.com/'
 

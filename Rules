@@ -54,10 +54,10 @@ end
 passthrough '/downloads/*/'
 
 route '/projects/*/' do
-  if item.identifier.split("/").last == item.identifier.split("/")[-2] then
-    item.identifier.split("/").reverse.drop(1).reverse.join("/") + "/index.html"
+  if item.identifier.to_s.split("/").last == item.identifier.to_s.split("/")[-2] then
+    item.identifier.to_s.split("/").reverse.drop(1).reverse.join("/") + "/index.html"
   else
-    item.identifier[0..-2] + "." + item[:extension]
+    item.identifier.to_s[0..-2] + "." + item[:extension]
   end
 end
 
