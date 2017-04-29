@@ -14,6 +14,7 @@
 #   because “*” matches zero or more characters.
 
 require 'uri'
+require 'html5small/nanoc'
 
 compile '/stylesheet/' do
   filter :rainpress
@@ -24,11 +25,13 @@ compile '/posts/*' do
     :enable_coderay => true,
     :coderay_line_numbers => nil
   layout 'post'
+  filter :html5small
 end
 
 compile '/about' do
   filter :kramdown
   layout 'default'
+  filter :html5small
 end
 
 compile '/rss' do
@@ -42,12 +45,14 @@ end
 compile '/projects' do
   filter :erb
   layout 'default'
+  filter :html5small
 end
 
 compile '/projects/*' do
   if item[:extension] == "md"
     filter :kramdown
     layout 'project'
+    filter :html5small
   end
 end
 
@@ -65,6 +70,7 @@ compile '*' do
   unless item.binary?
     filter :erb
     layout 'default'
+    filter :html5small
   end
 end
 

@@ -34,6 +34,10 @@ GEM
       nanoc (>= 4.3.8, < 5.0)
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
+    html5small (0.4.0)
+      htmlentities (>= 4.1.0)
+      nokogiri (>= 1.5.0)
+    htmlentities (4.3.4)
     json_pure (2.0.3)
     kramdown (1.5.0)
     listen (3.1.5)
@@ -89,6 +93,7 @@ DEPENDENCIES
   builder
   coderay
   guard-nanoc
+  html5small
   kramdown
   mime-types
   nanoc (~> 4.0)
