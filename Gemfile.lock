@@ -48,7 +48,7 @@ GEM
     method_source (0.8.2)
     mime-types (2.4.3)
     mini_portile2 (2.1.0)
-    nanoc (4.7.8)
+    nanoc (4.7.9)
       cri (~> 2.8)
       ddplugin (~> 1.0)
       hamster (~> 3.0)
