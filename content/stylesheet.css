@@ -127,6 +127,11 @@ footer a {
     margin-bottom: 15px;
 }
 
+footer a:hover {
+    transition: all .2s ease-in;
+    color: #690;
+}
+
 /* Grid from http://www.responsivegridsystem.com */
 
 .section {
