@@ -16,8 +16,12 @@
 require 'uri'
 require 'html5small/nanoc'
 
-compile '/stylesheet/' do
+ignore '/style/partials/*'
+
+compile '/style/main' do
+  filter :sass, syntax: :scss
   filter :rainpress
+  write '/style.css'
 end
 
 compile '/posts/*' do
@@ -70,10 +74,6 @@ compile '*' do
     layout 'default'
     filter :html5small
   end
-end
-
-route '/stylesheet' do
-  '/style.css'
 end
 
 route '/posts/*' do

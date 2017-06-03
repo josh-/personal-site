@@ -1,0 +1,39 @@
+/* Header */
+
+header {
+  height: 100px;
+  background: $green;
+  padding-top: 15px;
+  text-align: center;
+  h1 {
+    color: #FFF;
+    padding-top: 5px;
+    font-size: 30px;
+    font-weight: 200;
+    position: inline;
+    letter-spacing: 1.5px;
+  }
+}
+
+nav {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style-type: none;
+      display: inline;
+      a {
+        text-decoration: none;
+        color: #FFF;
+        font-weight: 2  00;
+      }
+    }
+  }
+  li:not(:first-child):before {
+    content: " | ";
+  }
+}

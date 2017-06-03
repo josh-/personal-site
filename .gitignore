@@ -1,3 +1,4 @@
 tmp/
 public/
 *.log
+.sass-cache
