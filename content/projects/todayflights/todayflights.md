@@ -5,7 +5,7 @@ kind: project
 licence: MIT
 github: https://github.com/josh-/TodayFlights/
 download: https://github.com/josh-/TodayFlights/releases/download/v1.0/TodayFlights.dmg
-slogan: TodayFlights is a Notification Center widget that allows you to track flights using the 'FlightUtilities' macOS system framework.
+description: TodayFlights is a Notification Center widget that allows you to track flights using the 'FlightUtilities' macOS system framework.
 ---
 
 TodayFlights is a Notification Center widget that allows you to monitor flights as they depart, fly and land. It uses the system flight tracking framework included in macOS.

@@ -6,7 +6,7 @@ licence: MIT
 github: https://github.com/josh-/Aristocrat
 download: 
 appstore: https://itunes.apple.com/us/app/aristocrat/id886910172?ls=1&mt=12
-slogan: Aristocrat is simple utility that makes Optical Character Recognition and Barcode Decoding easy.
+description: Aristocrat is simple utility that makes Optical Character Recognition and Barcode Decoding easy.
 ---
 
 Aristocrat is simple utility that allows you to decode barcodes on your screen and read the text in images and scanned PDFs.

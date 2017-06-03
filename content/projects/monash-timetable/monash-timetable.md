@@ -5,7 +5,7 @@ kind: project
 licence: MIT
 github: https://github.com/josh-/MonashTimetable/
 download: https://github.com/josh-/MonashTimetable/releases/download/v1.0/MonashTimetable.zip
-slogan: Your Monash University timetable in your Mac's menu bar.
+description: Your Monash University timetable in your Mac's menu bar.
 ---
 
 MonashTimetable is a simple open-source Mac application that puts your Monash University timetable in your menu bar. It automatically downloads and stores your timetable from the [my.monash portal](https://my.monash.edu.au), allowing you to have easy access to your classes whenever you're on your Mac.
