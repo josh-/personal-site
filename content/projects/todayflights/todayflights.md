@@ -22,7 +22,7 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
     </div>
 </div>
 
-<h3>Usge Instructions</h3>
+<h3>Usage Instructions</h3>
 <p>
     <ol>
         <li>Download the DMG file from above and copy the TodayFlights app to the Applications folder</li>
