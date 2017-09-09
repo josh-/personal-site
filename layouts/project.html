@@ -1,6 +1,6 @@
 <% render 'default' do %>
     <div class="project" style="text-align: center;">
-        <a class="nounderline" href="<%= item.path %>"><img src="<%= icon(item) %>" class="center"></a>
+        <a class="nounderline" href="<%= item.path %>"><img src="<%= icon(item) %>" srcset="<%= highres_icon(item) %> 2x" class="center"></a>
         <h1 style="width:100%; text-align:center"><%= link_to item[:title], item.path %></h1>
         <div id="projectbuttons" style="display: inline-block; margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px">
             <% if item[:download] then %>
