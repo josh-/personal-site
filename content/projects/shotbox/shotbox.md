@@ -9,10 +9,10 @@ description: Instantaneous screenshot editing and sharing on your Mac.
 
 <h2 style="margin-top: 30px; margin-bottom: 30px;">Edit and share your screenshots with ease</h2>
 
-<video class="responsive" style="margin-bottom: 10px;" controls poster="2.png">
-  <source src="/projects/ShotBox/ShotBox_VP9.webm" type="video/webm; codecs=vp9,vorbis">
-  <source src="/projects/ShotBox/ShotBox_MP4.mp4" type="video/mp4">
-  <img class="responsive" src="2.png" />
+<video class="responsive" style="margin-bottom: 10px;" controls poster="/images/ShotBox/ShotBox_2.jpg">
+  <source src="/projects/shotbox/ShotBox_VP9.webm" type="video/webm; codecs=vp9,vorbis">
+  <source src="/projects/shotbox/ShotBox_MP4.mp4" type="video/mp4">
+  <img class="responsive" src="/images/ShotBox/ShotBox_2.jpg"  alt="Illustrating ShotBox's Markup support"/>
 </video>
 
 <h2 style="margin-bottom: 30px;">iOS 11's Instant Markup on your Mac</h2>
