@@ -27,13 +27,13 @@ After taking a screenshot with the system keyboard shortcuts (⌘⇧3 and ⌘⇧
 
 <div class="section group" style="text-align: center; margin-top: 20px;margin-bottom: 20px">
     <div class="col span_1_of_3">
-        <a href="/images/ShotBox/ShotBox_1.jpg"><img src="/images/ShotBox/ShotBox_1.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox main window"></a>
+        <a class="fluidbox" href="/images/ShotBox/ShotBox_1.jpg"><img src="/images/ShotBox/ShotBox_1.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox main window"></a>
     </div>
     <div class="col span_1_of_3">
-        <a href="/images/ShotBox/ShotBox_5.jpg"><img src="/images/ShotBox/ShotBox_5.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox's drag-and-drop support with Markup"></a>
+        <a class="fluidbox" href="/images/ShotBox/ShotBox_5.jpg"><img src="/images/ShotBox/ShotBox_5.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox's drag-and-drop support with Markup"></a>
     </div>
     <div class="col span_1_of_3">
-        <a href="/images/ShotBox/ShotBox_1.jpg"><img src="/images/ShotBox/ShotBox_7.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox can help you clean up your desktop and delete screenshot when you're finished with them"></a>
+        <a class="fluidbox" href="/images/ShotBox/ShotBox_1.jpg"><img src="/images/ShotBox/ShotBox_7.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox can help you clean up your desktop and delete screenshot when you're finished with them"></a>
     </div>
 </div>
 

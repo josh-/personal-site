@@ -40,6 +40,10 @@ compile '/rss' do
   filter :erb
 end
 
+compile '/js/fluid' do
+  filter :erb
+end
+
 compile '/htaccess' do
   filter :erb
 end
@@ -83,6 +87,10 @@ end
 
 route 'rss' do
   '/rss.xml'
+end
+
+route 'js/fluid' do
+  '/js/fluid.js'
 end
 
 route 'htaccess' do

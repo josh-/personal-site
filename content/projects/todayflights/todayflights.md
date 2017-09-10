@@ -12,13 +12,13 @@ TodayFlights is a Notification Center widget that allows you to monitor flights 
 
 <div class="section group" style="text-align: center; margin-top: 20px;margin-bottom: 20px">
     <div class="col span_1_of_3">
-        <a href="/projects/TodayFlights/"><img src="/images/TodayFlights/1.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
+        <a class="fluidbox" href="/images/TodayFlights/1.jpg"><img src="/images/TodayFlights/1.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
     </div>
     <div class="col span_1_of_3">
-        <a href="/projects/TodayFlights/"><img src="/images/TodayFlights/2.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
+        <a class="fluidbox" href="/images/TodayFlights/2.jpg"><img src="/images/TodayFlights/2.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
     </div>
     <div class="col span_1_of_3">
-        <a href="/projects/TodayFlights/"><img src="/images/TodayFlights/4.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
+        <a class="fluidbox" href="/images/TodayFlights/4.jpg"><img src="/images/TodayFlights/4.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto"></a>
     </div>
 </div>
 
