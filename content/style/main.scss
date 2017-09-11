@@ -82,6 +82,9 @@ i.fa {
 
 a {
   color: $darkgreen;
+  &.fluidbox:hover {
+    cursor: zoom-in;
+  }
 }
 
 .content {
