@@ -40,8 +40,7 @@ compile '/rss' do
   filter :erb
 end
 
-compile '/js/fluid' do
-  filter :erb
+compile '/js/build' do
 end
 
 compile '/htaccess' do
@@ -89,8 +88,8 @@ route 'rss' do
   '/rss.xml'
 end
 
-route 'js/fluid' do
-  '/js/fluid.js'
+route 'js/build' do
+  '/js/build.js'
 end
 
 route 'htaccess' do
