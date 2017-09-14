@@ -33,7 +33,7 @@ After taking a screenshot with the system keyboard shortcuts (⌘⇧3 and ⌘⇧
         <a class="fluidbox" href="/images/ShotBox/ShotBox_5.jpg"><img src="/images/ShotBox/ShotBox_5.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox's drag-and-drop support with Markup"></a>
     </div>
     <div class="col span_1_of_3">
-        <a class="fluidbox" href="/images/ShotBox/ShotBox_1.jpg"><img src="/images/ShotBox/ShotBox_7.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox can help you clean up your desktop and delete screenshot when you're finished with them"></a>
+        <a class="fluidbox" href="/images/ShotBox/ShotBox_7.jpg"><img src="/images/ShotBox/ShotBox_7.jpg" style="width: 100%; max-width: 350px; display: block; margin: auto" alt="ShotBox can help you clean up your desktop and delete screenshot when you're finished with them"></a>
     </div>
 </div>
 
