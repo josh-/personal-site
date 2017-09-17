@@ -26,3 +26,12 @@ task :new_post do
     post.puts "---\n\n"
   end
 end
+
+task :renew_cert do
+  unless `which certbot`.empty?
+    `sudo certbot --preferred-challenges dns certonly --manual -d joshparnham.com`
+    # On macOS the certs then live in `/etc/letsencrypt/live/joshparnham.com/`
+  else
+    abort('certbot is required to be installed')
+  end
+end
