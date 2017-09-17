@@ -99,6 +99,7 @@ DEPENDENCIES
   nokogiri
   pygments.rb
   rainpress
+  rake
   sass
   stringex
 
