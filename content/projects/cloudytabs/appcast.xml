@@ -55,10 +55,10 @@
          </item>
          <item>
             <title>Version 1.7 (0 bugs fixed; 4 new features)</title>
-                  <sparkle:releaseNotesLink>
-                     http://joshparnham.com/projects/cloudytabs/v1.7.html
-                  </sparkle:releaseNotesLink>
-            <pubDate>Sun, 05 Apr 2015 12:00:00 +0000</pubDate>
+                <sparkle:releaseNotesLink>
+                    https://joshparnham.com/projects/cloudytabs/v1.7.html
+                </sparkle:releaseNotesLink>
+            <pubDate>Mon, 18 Oct 2017 15:00:00 +0000</pubDate>
             <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.7/CloudyTabs.zip" sparkle:version="1.7" length="1478884" type="application/octet-stream" sparkle:dsaSignature="MC0CFD+lhpjld9bW5oBpQ6CGGI+nrAT8AhUAhskevPK/pgd2rMJx/xGqeojaHks=" />
          </item>
    </channel>
