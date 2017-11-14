@@ -6,6 +6,7 @@ licence: MIT
 github: https://github.com/josh-/CloudyTabs/
 download: https://github.com/josh-/CloudyTabs/releases/download/v1.8/CloudyTabs.zip
 description: CloudyTabs is a simple menu bar application that lists your iCloud Tabs.
+platform: macOS
 ---
 
 <img class="responsive" src="CloudyTabs.png">

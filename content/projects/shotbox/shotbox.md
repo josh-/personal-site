@@ -5,6 +5,7 @@ kind: project
 download: 
 appstore: https://itunes.apple.com/us/app/shotbox/id1278619270?ls=1&mt=12
 description: Instantaneous screenshot editing and sharing on your Mac.
+platform: macOS
 ---
 
 <h2 style="margin-top: 30px; margin-bottom: 30px;">Edit and share your screenshots with ease</h2>

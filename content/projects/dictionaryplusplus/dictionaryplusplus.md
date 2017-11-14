@@ -5,6 +5,7 @@ kind: project
 github: https://github.com/josh-/DictionaryPlusPlus
 download: 
 description: Dictionary++ is a simple interface to iOS's system dictionary.
+platform: iOS
 ---
 
 Dictionary++ is a simple interface to iOS's system dictionary.

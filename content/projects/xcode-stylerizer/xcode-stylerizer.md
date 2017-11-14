@@ -5,6 +5,7 @@ kind: project
 github: https://github.com/josh-/Xcode-Stylerizer
 download: https://github.com/josh-/Xcode-Stylerizer#xcode-stylerizer
 description: Browser extension that correctly styles all occurences of 'Xcode'.
+platform: Browser Extension
 ---
 
 Browser extension that correctly styles all occurences of 'Xcode'.
