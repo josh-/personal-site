@@ -2,8 +2,7 @@ image: "ruby:2.4"
 
 renew-cert:
   stage: deploy
-  only:
-    - schedules
+  when: manual
   script:
     - chmod +x certbot.sh
     - chmod +x dns.sh
