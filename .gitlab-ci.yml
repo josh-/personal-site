@@ -1,5 +1,13 @@
 image: "ruby:2.4"
 
+job:on-schedule:
+  only:
+    - schedules
+  script:
+    - chmod +x certbot.sh
+    - chmod +x dns.sh
+    - ./renew.sh
+
 before_script:
   - ruby -v
   - which ruby
