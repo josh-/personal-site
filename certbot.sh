@@ -1,5 +1,6 @@
+echo 'deb http://ftp.debian.org/debian jessie-backports main' >> /etc/apt/sources.list
 apt-get update
-apt-get -y install certbot
+apt-get install -y python-certbot-apache -t jessie-backports
 
 certbot certonly --manual \
     --dry-run \
