@@ -1,5 +1,4 @@
 apt-get update
-add-apt-repository ppa:certbot/certbot
 apt-get -y install certbot
 
 certbot certonly --manual \
