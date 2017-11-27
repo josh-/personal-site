@@ -1,8 +1,7 @@
-echo 'deb http://ftp.debian.org/debian jessie-backports main' >> /etc/apt/sources.list
-apt-get update
-apt-get install -y python-certbot-apache -t jessie-backports
+wget https://dl.eff.org/certbot-auto
+chmod a+x ./certbot-auto
 
-certbot certonly --manual \
+./certbot-auto certonly --manual \
     --dry-run \
     --non-interactive \
     -d "$LE_DOMAIN" \
