@@ -2,6 +2,7 @@ apt-get update
 apt-get -y install certbot
 
 certbot certonly --manual \
+    --dry-run \
     --non-interactive \
     -d "$LE_DOMAIN" \
     --email "$LE_EMAIL" \
