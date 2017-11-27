@@ -6,7 +6,7 @@ renew-cert:
   script:
     - chmod +x certbot.sh
     - chmod +x dns.sh
-    - ./renew.sh
+    - ./certbot.sh
 
 before_script:
   - ruby -v

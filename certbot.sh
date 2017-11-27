@@ -10,5 +10,5 @@ sudo certbot certonly --manual \
     --agree-tos \
     --manual-public-ip-logging-ok \
     --preferred-challenges dns \
-    --renew-hook ./le-hook.sh \
+    --renew-hook ./dns.sh \
     --post-hook 'echo Run post hook'
