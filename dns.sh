@@ -1,10 +1,10 @@
-sudo apt-get install jq
+apt-get install jq
 jq --version
 
 # Need to use Homebrew-installed curl on macOS
 # export PATH="/usr/local/opt/curl/bin:$PATH"
 
-sudo apt-get install curl
+apt-get install curl
 curl --version
 
 echo "Logging in to hover"

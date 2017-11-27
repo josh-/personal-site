@@ -2,7 +2,7 @@ apt-get update
 add-apt-repository ppa:certbot/certbot
 apt-get -y install certbot
 
-sudo certbot certonly --manual \
+certbot certonly --manual \
     --non-interactive \
     -d "$LE_DOMAIN" \
     --email "$LE_EMAIL" \
