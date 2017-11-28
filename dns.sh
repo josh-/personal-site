@@ -39,11 +39,17 @@ DNS_ID=$(echo "$HOVER_DNS_VALUES" | jq --raw-output ".domains[] | select(.domain
 echo "DNS ID is $DNS_ID"
 
 echo "Updating DNS TXT text record with Certbot validation data"
-curl "https://www.hover.com/api/dns/${DNS_ID}" \
+HOVER_OUTPUT=$(curl "https://www.hover.com/api/dns/${DNS_ID}" \
     -X PUT \
     -d "content=${CERTBOT_VALIDATION}" \
     -s \
     --cookie "cookies.txt" \
-    --cookie-jar "cookies.txt"
+    --cookie-jar "cookies.txt")
 
-echo "Updated hover"
+HOVER_OUTPUT_SUCCESS=$(echo "$HOVER_OUTPUT" | jq ".succeeded")
+
+if [ "$HOVER_OUTPUT_SUCCESS" == "true" ]; then
+    echo "Updating Hover DNS succeeded"
+else
+    echo "Updating Hover DNS failed"
+fi
