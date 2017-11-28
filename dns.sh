@@ -29,11 +29,12 @@ curl "https://www.hover.com/api/login" \
     --cookie-jar "cookies.txt"
 
 echo "Fetching the DNS ID"
-DNS_ID=curl "https://www.hover.com/api/domains/$CERTBOT_DOMAIN/dns" \
+HOVER_DNS_VALUES=$(curl "https://www.hover.com/api/domains/$CERTBOT_DOMAIN/dns" \
     -s \
     --cookie "cookies.txt" \
-    --cookie-jar "cookies.txt" \
-    | jq ".domains[] | select(.domain_name == \"$CERTBOT_DOMAIN\") | .entries[] | select(.type == "TXT") | .id"
+    --cookie-jar "cookies.txt")
+
+DNS_ID=$(echo "$HOVER_DNS_VALUES" | jq ".domains[] | select(.domain_name == \"$CERTBOT_DOMAIN\") | .entries[] | select(.type == \"TXT\") | .id")
 
 echo "Updating DNS TXT text record with LE data: $LE_DATA"
 curl "https://www.hover.com/api/dns/${DNS_ID}" \
