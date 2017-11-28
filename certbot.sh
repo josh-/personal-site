@@ -10,5 +10,5 @@ chmod a+x ./certbot-auto
     --agree-tos \
     --manual-public-ip-logging-ok \
     --preferred-challenges dns \
-    --manual-auth-hook ./dns.sh \
+    --manual-auth-hook ./dns.rb \
     --manual-cleanup-hook 'echo Run post hook'
