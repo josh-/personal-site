@@ -36,7 +36,9 @@ HOVER_DNS_VALUES=$(curl "https://www.hover.com/api/domains/$CERTBOT_DOMAIN/dns" 
 
 DNS_ID=$(echo "$HOVER_DNS_VALUES" | jq --raw-output ".domains[] | select(.domain_name == \"$CERTBOT_DOMAIN\") | .entries[] | select(.type == \"TXT\") | .id")
 
-echo "Updating DNS TXT text record with LE data: $LE_DATA"
+echo "DNS ID is $DNS_ID"
+
+echo "Updating DNS TXT text record with Certbot validation data"
 curl "https://www.hover.com/api/dns/${DNS_ID}" \
     -X PUT \
     -d "content=${CERTBOT_VALIDATION}" \
