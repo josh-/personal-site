@@ -12,3 +12,5 @@ chmod a+x ./certbot-auto
     --preferred-challenges dns \
     --manual-auth-hook ./dns.rb \
     --manual-cleanup-hook 'echo Run post hook'
+
+echo $(ls -la /etc/letsencrypt)
