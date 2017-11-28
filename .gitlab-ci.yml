@@ -5,7 +5,7 @@ renew-cert:
   when: manual
   script:
     - chmod +x certbot.sh
-    - chmod +x dns.sh
+    - chmod +x dns.rb
     - ./certbot.sh
 
 before_script:
