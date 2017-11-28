@@ -1,4 +1,5 @@
-apt-get install jq
+apt-get update
+apt-get install -y jq
 jq --version
 
 # Need to use Homebrew-installed curl on macOS
