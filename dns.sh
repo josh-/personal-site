@@ -49,8 +49,4 @@ HOVER_OUTPUT=$(curl "https://www.hover.com/api/dns/${DNS_ID}" \
 
 HOVER_OUTPUT_SUCCESS=$(echo "$HOVER_OUTPUT" | jq ".succeeded")
 
-if [ "$HOVER_OUTPUT_SUCCESS" == "true" ]; then
-    echo "Updating Hover DNS succeeded"
-else
-    echo "Updating Hover DNS failed"
-fi
+echo "Status of updating Hover DNS: $HOVER_OUTPUT_SUCCESS"
