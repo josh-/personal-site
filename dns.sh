@@ -4,7 +4,17 @@ jq --version
 # Need to use Homebrew-installed curl on macOS
 # export PATH="/usr/local/opt/curl/bin:$PATH"
 
-apt-get install curl
+CURRENT_DIR=`pwd`
+cd /usr/local/src
+wget https://curl.haxx.se/download/curl-7.56.1.tar.gz
+tar -xvzf curl-7.56.1.tar.gz
+rm *.gz
+cd curl-7.56.1
+./configure
+make
+make install
+cd $CURRENT_DIR
+
 curl --version
 
 echo "Logging in to hover"
