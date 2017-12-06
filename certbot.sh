@@ -13,5 +13,6 @@ chmod a+x ./certbot-auto
     --manual-cleanup-hook 'echo Run post hook'
 
 echo $(ls -la /etc/letsencrypt)
+echo $(ls -la /etc/letsencrypt/live/$LE_DOMAIN/)
 
 ./gitlab.sh
