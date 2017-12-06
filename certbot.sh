@@ -2,7 +2,6 @@ wget https://dl.eff.org/certbot-auto
 chmod a+x ./certbot-auto
 
 ./certbot-auto certonly --manual \
-    --dry-run \
     --non-interactive \
     -d "$LE_DOMAIN" \
     --email "$LE_EMAIL" \
@@ -14,3 +13,5 @@ chmod a+x ./certbot-auto
     --manual-cleanup-hook 'echo Run post hook'
 
 echo $(ls -la /etc/letsencrypt)
+
+./gitlab.sh
