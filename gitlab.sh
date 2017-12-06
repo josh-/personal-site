@@ -1,5 +1,5 @@
-CERT_PEM="/etc/letsencrypt/live/$LE_DOMAIN/fullchain.pem"
-KEY_PEM="/etc/letsencrypt/live/$LE_DOMAIN/privkey.pem"
+CERT_PEM="certbot/work/live/$LE_DOMAIN/fullchain.pem"
+KEY_PEM="certbot/work/live/$LE_DOMAIN/privkey.pem"
 
 curl --request PUT \
     --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
