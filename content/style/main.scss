@@ -4,6 +4,7 @@
 @import "partials/_header";
 @import "partials/_footer";
 @import "partials/_404";
+@import "partials/_breadcrumbs";
 
 /* Global */
 
@@ -73,7 +74,7 @@ i.fa {
 .content {
   margin-left: 22%;
   margin-right: 22%;
-  margin-top: 40px;
+  margin-top: 15px;
   h1 {
     font-weight: 400;
     color: $darkgreen;
@@ -141,7 +142,7 @@ h3.intro {
   color: #999;
   font-size: 35px;
   font-weight: 500;
-  margin-top: 40px;
+  margin-top: 15px;
   margin-bottom: 40px;
 }
 

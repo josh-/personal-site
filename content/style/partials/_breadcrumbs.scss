@@ -1,0 +1,19 @@
+#breadcrumbs {
+  margin-bottom: 15px;
+  span#overview {
+    color: #666;
+  }
+  ol {
+    display: inline-block;
+  }
+  li {
+    list-style-type: none;
+    display: inline;
+    a {
+      text-decoration: none;
+    }
+  }
+  li:not(:last-child):after {
+    content: "\2192";
+  }
+}

@@ -37,6 +37,7 @@
 
         <main role="main" itemscope itemprop="mainContentOfPage">
             <section class="content">
+                <% render 'breadcrumbs' do %><% end %>
                 <%= yield %>
                 <% render 'footer' do %><% end %>
             </section>
