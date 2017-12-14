@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'nanoc', '~> 4.0'
+group :nanoc do
+  gem 'guard-nanoc'
+end
+
+gem 'nanoc', '~> 4.3'
 gem 'adsf'
 gem 'kramdown'
 gem 'nokogiri'
@@ -10,7 +14,6 @@ gem 'mime-types'
 gem 'builder'
 gem 'pygments.rb'
 gem 'stringex'
-gem 'guard-nanoc'
 gem 'html5small'
 gem 'sass'
 gem 'rake'
