@@ -95,7 +95,7 @@ DEPENDENCIES
   html5small
   kramdown
   mime-types
-  nanoc (~> 4.0)
+  nanoc (~> 4.3)
   nokogiri
   pygments.rb
   rainpress
