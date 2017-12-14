@@ -53,21 +53,11 @@ compile '/projects' do
   filter :html5small
 end
 
-compile '/projects/*' do
+compile '/projects/*/' do
   if item[:extension] == 'md'
     filter :kramdown
     layout 'project'
     filter :html5small
-  end
-end
-
-passthrough '/downloads/*/'
-
-route '/projects/*/' do
-  if item.identifier.to_s.split('/').last == item.identifier.to_s.split('/')[-2]
-    item.identifier.to_s.split('/').reverse.drop(1).reverse.join('/') + '/index.html'
-  else
-    item.identifier.to_s[0..-2] + '.' + item[:extension]
   end
 end
 
@@ -77,6 +67,19 @@ compile '*' do
     layout 'default'
     filter :html5small
   end
+end
+
+passthrough '/downloads/*/'
+
+route '/projects/*/' do
+  if item.raw_filename.to_s =~ /index.*/
+    puts item.identifier.to_s
+    item.identifier.to_s + 'index.html'
+  else
+    item.identifier.chop + '.' + item[:extension]
+  end
+end
+
 end
 
 route '/posts/*' do
