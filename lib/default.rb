@@ -1,4 +1,6 @@
 require 'time'
+require 'yaml'
+require 'pathname'
 
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::Tagging
@@ -31,3 +33,16 @@ def published_articles
 end
 
 include PostHelper
+
+site_path = File.expand_path(File.dirname(File.dirname(__FILE__)))
+config_filename = 'nanoc.yaml'
+$config = YAML.load_file(File.join(site_path, config_filename))
+
+module Nanoc
+  class CompilationItemView
+    def full_path
+      url = URI($config['base_url'])
+      "//#{url.host}#{path}"
+    end
+  end
+end

@@ -4,7 +4,7 @@
         <% breadcrumbs_trail.each_with_index do |crumb, index| %>
             <% next if crumb.nil? %>
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="<%= crumb.path %>">
+                <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="<%= crumb.full_path %>">
                     <span itemprop="name"><%=crumb[:title]%></span>
                 </a>
                 <meta property="position" content=<%= index + 1 %>>
