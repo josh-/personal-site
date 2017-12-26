@@ -1,5 +1,5 @@
-CERT_PEM="./certbot/config/live/$LE_DOMAIN/fullchain.pem"
-KEY_PEM="./certbot/config/live/$LE_DOMAIN/privkey.pem"
+CERT_PEM=$(readlink -f "./certbot/config/live/$LE_DOMAIN/fullchain.pem")
+KEY_PEM=$(readlink -f "./certbot/config/live/$LE_DOMAIN/privkey.pem")
 
 curl --request PUT \
     --header "PRIVATE-TOKEN: $GITLAB_TOKEN" \
