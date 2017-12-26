@@ -3,6 +3,8 @@ mkdir -p ./certbot/config ./certbot/logs ./certbot/work
 wget https://dl.eff.org/certbot-auto
 chmod a+x ./certbot-auto
 
+echo "PWD is $PWD"
+
 ./certbot-auto certonly --manual \
     --non-interactive \
     -d "$LE_DOMAIN" \
@@ -17,7 +19,10 @@ chmod a+x ./certbot-auto
     --manual-auth-hook ./dns.rb \
     --manual-cleanup-hook 'echo Run post hook'
 
-echo $(ls -la ./certbot/work)
-echo $(ls -la ./certbot/work/live/$LE_DOMAIN/)
+echo $(ls -la ./certbot/config)
+echo $(ls -la ./certbot/config/live/$LE_DOMAIN/)
+
+echo "PWD is $PWD"
+echo "HOME is $HOME"
 
 ./gitlab.sh
