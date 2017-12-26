@@ -25,4 +25,4 @@ echo $(ls -la ./certbot/config/live/$LE_DOMAIN/)
 echo "PWD is $PWD"
 echo "HOME is $HOME"
 
-./gitlab.sh
+./gitlab.rb
