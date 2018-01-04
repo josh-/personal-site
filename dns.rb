@@ -43,22 +43,45 @@ unless domains_data['succeeded'] == true
   exit
 end
 
+domain_id = domains_data['domains']
+  .select { |domain| domain['domain_name'] == CERTBOT_DOMAIN }.first['id']
+
 dns_id = domains_data['domains']
   .select { |domain| domain['domain_name'] == CERTBOT_DOMAIN }.first['entries']
-  .select { |dns| dns['type'] == 'TXT' }.first['id']
+  .select { |dns| dns['type'] == 'TXT' && dns['name'] == '_acme-challenge' }.first.dig('id')
 
-puts 'Updating DNS TXT text record with Certbot validation data'
+if dns_id
+  puts 'Updating DNS TXT text record with Certbot validation data'
 
-request = Net::HTTP::Put.new("/api/dns/#{dns_id}", cookie_headers)
-content_headers = {
-    'content' => ENV['CERTBOT_VALIDATION']
-}
-request.set_form_data(content_headers)
-update_dns_response = http.request(request)
+  request = Net::HTTP::Put.new("/api/dns/#{dns_id}", cookie_headers)
+  content_headers = {
+    'content' => CERTBOT_VALIDATION
+  }
+  request.set_form_data(content_headers)
+  update_dns_response = http.request(request)
 
-update_data = JSON.parse(update_dns_response.body)
+  update_data = JSON.parse(update_dns_response.body)
 
-unless update_data['succeeded'] == true
-  puts "Error updating: #{update_dns_response.message}"
-  exit
+  unless update_data['succeeded'] == true
+    puts "Error updating: #{update_dns_response.message}"
+    exit
+  end
+else
+  puts 'Creating new DNS TXT record with Certbot validation data'
+
+  request = Net::HTTP::Post.new("/api/domains/#{domain_id}/dns", cookie_headers)
+  content_headers = {
+    'type' => 'TXT',
+    'name' => '_acme-challenge',
+    'content' => CERTBOT_VALIDATION
+  }
+  request.set_form_data(content_headers)
+  update_dns_response = http.request(request)
+
+  update_data = JSON.parse(update_dns_response.body)
+
+  unless update_data['succeeded'] == true
+    puts "Error creating record: #{update_dns_response.message}"
+    exit
+  end
 end

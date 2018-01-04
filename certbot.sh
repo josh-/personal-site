@@ -15,6 +15,6 @@ chmod a+x ./certbot-auto
     --work-dir ./certbot/work \
     --preferred-challenges dns \
     --manual-auth-hook ./dns.rb \
-    --manual-cleanup-hook 'echo Run post hook'
+    --manual-cleanup-hook ./cleanup.rb
 
 ./gitlab.rb
