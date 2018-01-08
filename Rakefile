@@ -1,4 +1,5 @@
 require 'stringex'
+require 'rubocop/rake_task'
 
 task default: [:new_post]
 
@@ -34,4 +35,8 @@ task :renew_cert do
   else
     abort('certbot is required to be installed')
   end
+RuboCop::RakeTask.new(:lint) do |task|
+  task.fail_on_error = false
+end
+
 end

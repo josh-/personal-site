@@ -20,15 +20,15 @@ cache:
     - vendor
 
 stages:
-#  - test
+ - test
   - deploy
 
-#lint:
-#  stage: test
-#  script:
-#    - bundle exec rake lint
-#  tags:
-#    - ruby
+lint:
+  stage: test
+  script:
+    - bundle exec rake lint
+  tags:
+    - ruby
 
 pages:
   stage: deploy
