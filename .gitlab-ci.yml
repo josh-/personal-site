@@ -20,7 +20,7 @@ cache:
     - vendor
 
 stages:
- - test
+  - test
   - deploy
 
 lint:
