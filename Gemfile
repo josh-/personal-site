@@ -17,3 +17,4 @@ gem 'stringex'
 gem 'html5small'
 gem 'sass'
 gem 'rake'
+gem 'rubocop', '~> 0.52.1', require: false
