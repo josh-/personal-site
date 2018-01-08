@@ -28,15 +28,7 @@ task :new_post do
   end
 end
 
-task :renew_cert do
-  unless `which certbot`.empty?
-    `sudo certbot --preferred-challenges dns certonly --manual -d joshparnham.com`
-    # On macOS the certs then live in `/etc/letsencrypt/live/joshparnham.com/`
-  else
-    abort('certbot is required to be installed')
-  end
+desc 'Run the linter (also has the optional lint:auto_correct task)'
 RuboCop::RakeTask.new(:lint) do |task|
   task.fail_on_error = false
-end
-
 end
