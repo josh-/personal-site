@@ -69,5 +69,14 @@
             <pubDate>Sat, 28 Oct 2017 17:40:00 +0000</pubDate>
             <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.8/CloudyTabs.zip" sparkle:version="1.8" length="1478977" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCc3gnOpWoX/aWGRbbN71S1d0v3+wIVAM87rbYmAwq4E1Xu+oX8/Bs5Wu13" />
          </item>
+
+         <item>
+            <title>Version 1.9 (1 bugs fixed; 1 new feature)</title>
+                <sparkle:releaseNotesLink>
+                    https://joshparnham.com/projects/cloudytabs/v1.9.html
+                </sparkle:releaseNotesLink>
+            <pubDate>Sun, 11 Feb 2018 19:00:00 +0000</pubDate>
+            <enclosure url="https://github.com/josh-/CloudyTabs/releases/download/v1.9/CloudyTabs.zip" sparkle:version="1.9" length="1896525" type="application/octet-stream" sparkle:dsaSignature="MC4CFQCLgYaByCIc3Jc3CBqa1f1yvcCumwIVAKlQskYmOW/pEAUu1/F8WmD0INbu" />
+         </item>
    </channel>
 </rss>
