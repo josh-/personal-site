@@ -48,7 +48,7 @@ domain_id = domains_data['domains']
 
 dns_id = domains_data['domains']
   .select { |domain| domain['domain_name'] == CERTBOT_DOMAIN }.first['entries']
-  .select { |dns| dns['type'] == 'TXT' && dns['name'] == '_acme-challenge' }.first.dig('id')
+  .select { |dns| dns['type'] == 'TXT' && dns['name'] == '_acme-challenge' }.first&.dig('id')
 
 if dns_id
   puts 'Updating DNS TXT text record with Certbot validation data'
