@@ -9,7 +9,7 @@ description: Aspiring full-stack software developer from Melbourne, Australia.
     <% sorted_projects.first(3).each do |project| %>
         <div class="col span_1_of_3">
         <a href=<%= project.path %>>
-            <img class="center" style="max-width: 200px; vertical-align: bottom;" src="<%= icon(project) %>" srcset="<%= highres_icon(project) %> 2x" alt="Project icon"></a>
+            <img class="center" style="max-width: 200px; vertical-align: bottom;" srcset="<%= icon(project) %> 1x, <%= highres_icon(project) %> 2x" alt="Project icon"></a>
             <h1 style="text-align: center"><%= link_to project[:title], project.path %></h1>
 	    </div>
     <% end %>

@@ -7,13 +7,21 @@ module ProjectHelper
     projects.sort_by { |p| attribute_to_time(p[:created_at]) }.reverse
   end
 
+  def project_root(path)
+    return path.split("/")[0..2].join("/")
+  end
+
   def icon(item)
-    File.join(item.path, 'Icon.png')
+    # puts item.path
+    puts File.join(project_root(item.path), 'Icon.png')
+    File.join(project_root(item.path), 'Icon.png')
   end
 
   def highres_icon(item)
-    filepath = File.join(item.path, 'Icon@2x.png')
-    File.exists?(filepath) ? filepath : icon(item)
+    filepath = File.join(project_root(item.path), 'Icon@2x.png')
+    
+    file_exists = File.exists?(File.join(File.dirname(__FILE__), "../content", filepath))
+    file_exists ? filepath : nil
   end
 
   def project_text(project)
