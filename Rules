@@ -78,8 +78,7 @@ end
 passthrough '/downloads/*/'
 
 route '/projects/*/' do
-  if item.raw_filename.to_s =~ /index.*/
-    puts item.identifier.to_s
+  if item.raw_filename.to_s =~ /.*html$/ or item.raw_filename.to_s =~ /.*md$/
     item.identifier.to_s + 'index.html'
   else
     item.identifier.chop + '.' + item[:extension]
