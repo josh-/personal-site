@@ -1,14 +1,5 @@
 image: "ruby:2.4"
 
-renew-cert:
-  stage: deploy
-  when: manual
-  script:
-    - chmod +x certbot.sh
-    - chmod +x dns.rb
-    - chmod +x gitlab.rb
-    - ./certbot.sh
-
 before_script:
   - ruby -v
   - which ruby
